@@ -5,14 +5,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Compile
-                npm install
+                sh 'npm install'
             }
         }
         
         stage('Run Test Project') {
             steps {
                 // Compile
-                gauge run specs
+                sh 'gauge run specs'
             }
         }
     }
