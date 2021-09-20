@@ -9,7 +9,7 @@ pipeline {
             }
         }
         
-        stage('Run Test Project') {
+        stage('Excute') {
             steps {
                 // Compile
                 sh 'gauge run specs'
