@@ -16,4 +16,12 @@ pipeline {
             }
         }
     }
+    
+    post {
+        always {
+            script {
+                junit '**/reports/xml-report/*.xml'
+            }
+        }
+    }
 }
